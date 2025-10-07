@@ -30,7 +30,7 @@ def test_custom_delimiter():
 
 def test_negative_number_raises():
     with pytest.raises(NegativeNumberError) as excinfo:
-        add("1,2,3")
+        add("1,-2,3")
     assert "negative numbers not allowed -2" in str(excinfo.value)
 
 
